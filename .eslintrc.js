@@ -13,10 +13,13 @@ module.exports = {
 	],
 	overrides: [],
 	parserOptions: {
+		ecmaFeatures: {
+			jsx: true,
+		},
 		ecmaVersion: 'latest',
 		sourceType: 'module',
 	},
-	plugins: ['react', 'jest'],
+	plugins: ['react', 'jest', 'prettier', 'react-hooks'],
 	rules: {
 		indent: ['error', 'tab'],
 		'linebreak-style': ['error', 'unix'],
