@@ -73,4 +73,8 @@ describe('<Heading />', () => {
 		const h6 = container.querySelector('h6');
 		expect(h6.tagName.toLowerCase()).toBe('h6');
 	});
+	it('should render with whote color', () => {
+		const { container } = renderTheme(<Heading>texto</Heading>);
+		expect(container.firstChild).toMatchSnapshot();
+	});
 });

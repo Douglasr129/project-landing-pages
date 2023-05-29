@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextComponent /> should render with whote color 1`] = `
+.c0 {
+  color: #0a1128;
+  font-size: 2.4rem;
+}
+
+<p
+  class="c0"
+>
+  Children
+</p>
+`;
