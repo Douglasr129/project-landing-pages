@@ -24,11 +24,11 @@ describe('<MenuLink />', () => {
 	});
 
 	it('should render open in a new tab', () => {
-		renderTheme(
+		const { container } = renderTheme(
 			<MenuLink link="http://localhost" newTab={false}>
 				Children
 			</MenuLink>,
 		);
-		expect(screen.getByRole('link', { name: 'Children' })).toMatchSnapshot();
+		expect(container.firstChild).toMatchSnapshot();
 	});
 });
