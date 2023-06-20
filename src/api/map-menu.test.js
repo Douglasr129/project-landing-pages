@@ -26,7 +26,7 @@ describe('map-menu', () => {
 					url: '#contact',
 				},
 			],
-			logo: {
+			image: {
 				data: {
 					attributes: {
 						url: 'a.svg',
